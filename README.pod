@@ -1,0 +1,38 @@
+=head1 NAME
+
+AO3 EPUB Importer
+
+=head1 SYNOPSIS
+
+ao3-epub-importer -u UID -pa PASSWORD -f FILE [options]
+
+=head1 OPTIONS
+
+=over 12
+
+=item B<-uid>
+
+User ID on AO3. [required]
+
+=item B<-password>
+
+Password on AO3. [required]
+
+=item B<-file>
+
+EPUB to parse. [required]
+
+=item B<-rating>
+
+Default "Not Rated". Valid values are "General Audiences", "Teen And Up Audiences", "Mature", and "Explicit".
+
+=item B<-processes>
+
+Processes to run at once.
+
+=back
+
+=head1 DESCRIPTION
+
+B<This program> will upload a properly structured EPUB file as an AO3 fic, attempting to make intelligent conversions of metadata where available.
+
